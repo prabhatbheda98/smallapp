@@ -1,0 +1,22 @@
+.Register{
+    padding: 1rem;
+    border:1px solid;
+    align-items: center;
+    width: 400px;
+    height: 30vw;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px grey;
+    background-color:white;
+    padding: 1rem;
+    text-align: center;
+}
+.Register> input{
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    font-size: 1rem;
+}

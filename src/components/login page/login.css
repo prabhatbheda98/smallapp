@@ -1,0 +1,33 @@
+.login{
+    padding: 1rem;
+    border:1px solid;
+    align-items: center;
+    width: 400px;
+    height: 30vw;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px grey;
+    background-color:white;
+    padding: 1rem;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.login> input{
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    font-size: 1rem;
+}
+.login>p>a{
+    COLOR: BLACK;
+    margin-bottom: 50px;
+}

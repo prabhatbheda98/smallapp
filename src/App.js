@@ -1,24 +1,54 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'antd/dist/antd.css';
+import Navbar from './components/Navbar';
+import Home from './components/home page/home';
+import Login from "./components/login page/login";
+import Register from './components/register/register';
+import Forget from './components/forgotpage/forget';
+import Setpassword from './components/Setpasswordpage/Setpassword';
+import Userprofile from './components/Userprofilepage/Userprofile';
+import ItemEditForm from './components/Userprofilepage/Userprofile';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/forget">
+            <Forget />
+          </Route>
+          <Route path="/password-reset/:userId/:token">
+            <Setpassword />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/userprofile">
+            <Userprofile />
+          </Route>
+          <Route
+            exact
+            path="/student/:id/edit"
+            render={() => <ItemEditForm />}
+          />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
